@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUE GARDEN - Administration</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #293785;
+            color: #333;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(122, 122, 122, 0.1);
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #ebebeb;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #7c7c7c;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        .admin-container {
+            padding: 20px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .admin-container h1 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .admin-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .admin-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(230, 230, 230, 0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            text-align: left;
+        }
+
+        .admin-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .admin-item:hover {
+            transform: scale(1.05);
+        }
+
+        .admin-details {
+            padding: 15px;
+        }
+
+        .admin-details h3 {
+            font-size: 1.2rem;
+            color: #054c04;
+            margin-bottom: 8px;
+        }
+
+        .admin-details p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+
+        footer a {
+            color: #2259ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffdd57;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            .admin-items {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .admin-item {
+                width: 100%;
+            }
+
+            header nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BLUE GARDEN</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Administration</a>
+        </nav>
+    </header>
+
+    <div class="admin-container">
+        <h1>Our Leadership Team</h1>
+        <div class="admin-items">
+            <div class="admin-item">
+                <img src="jonsan.jpg" alt="CEO">
+                <div class="admin-details">
+                    <h3>JONSAN</h3>
+                    <p>CEO - Leading Blue Garden with a vision of excellence and innovation in hospitality.</p>
+                </div>
+            </div>
+
+            <div class="admin-item">
+                <img src="kally.jpeg" alt="Manager">
+                <div class="admin-details">
+                    <h3>KALLY</h3>
+                    <p>Manager - Ensures smooth operations and a great dining experience for all guests.</p>
+                </div>
+            </div>
+
+            <div class="admin-item">
+                <img src="litton.jpeg" alt="Master Chef">
+                <div class="admin-details">
+                    <h3>LITTON</h3>
+                    <p>Master Chef - Brings authentic Italian flavors to every dish served.</p>
+                </div>
+            </div>
+
+            <div class="admin-item">
+                <img src="kanaka.png" alt="Assistant Managing Director">
+                <div class="admin-details">
+                    <h3>KANAKA</h3>
+                    <p>Assistant Managing Director - Supporting the team with strategy and execution excellence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 OLIVE GARDEN. All rights reserved. | <a href="home.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>
